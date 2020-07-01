@@ -1,0 +1,37 @@
+/* colors: */
+/* cream #FAF0CA */
+/* dark blue #0D3B66 */
+/* yellow #F4D35E */
+
+body {
+    background-color: white;
+}
+
+#app {
+    width: 50%;
+    border-radius: 3px;
+    margin: 0 auto;
+    background-color: #FAF0CA;
+}
+
+.header {
+    display: flex;
+    background: url("https://res.cloudinary.com/btdigital/image/upload/v1550806885/051_qisgu5.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    color: #FAF0CA;
+    height: 300px;
+    align-items: flex-end;
+}
+
+.headerImg {
+    width: 100%;
+}
+
+.headerTitle {
+    padding: 5px 12px;
+}
+
+#feedbackForm {
+    padding: 15px;
+}
