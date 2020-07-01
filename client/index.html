@@ -24,21 +24,61 @@
             </div>
 
             <!-- Form -->
-            <form id="feedbackForm">
-                <!-- first name -->
-                <input
-                    type="text"
-                    name="customer_first_name"
-                    placeholder="First Name"
-                >
-                <input
-                    type="text"
-                    name="customer_last_name"
-                    placeholder="Last Name"
-                >
+            <form
+                id="feedbackForm"
+                action="/submit"
+                method="POST"
+            >
+                <div class="user_info_section">
+                    <!-- first name -->
+                    <input
+                        type="text"
+                        name="customer_first_name"
+                        placeholder="First Name"
+                        class="formUserInput"
+                    >
+                    <!-- last name -->
+                    <input
+                        type="text"
+                        name="customer_last_name"
+                        placeholder="Last Name"
+                        class="formUserInput"
+                    >
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        class="formUserInput"
+                    />
+                </div>
+                <div class="experience_rating_section">
+                    <label>Rate your experience</label>
+                    <input 
+                        type="range"
+                        min="1"
+                        max="10"
+                        name="experience_rating"
+                        id="experience_rating"
+                        class="formInput"
+                    />
+                </div>
+                <div class="comments_section">
+                    <label>Comments</label>
+                    <br>
+                    <textarea
+                        name="comments"
+                        cols="30"
+                        rows="10"
+                        placeholder="Comments"
+                        id="comment_box"
+                    ></textarea>
+                </div>
+                <br>
+
                 <!-- submit -->
                 <input
                     type="submit"
+                    value="Submit"
+                    class="formSubmit"
                 />
             </form>
         </div>
