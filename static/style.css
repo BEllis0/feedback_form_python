@@ -68,21 +68,29 @@ body {
 
 #experience_rating {
     width: 50%;
+    background-color: red;
 }
+
+
 
 .comments_section {
     padding: 20px 0px;
+    width: 100%;
 }
 
 #comment_box {
     background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
 }
 
 .formSubmit {
     padding: 5px;
     width: 150px;
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: #0D3B66;
+    border: 1px solid white;
+    color: white;
     border-radius: 12px;
     margin: 10px 0px;
 }
