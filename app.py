@@ -30,6 +30,15 @@ db = SQLAlchemy(app)
 # DB Models
 # ============
 
+class Feedback(db.Model):
+    __tablename__ = 'feedback'
+
+    id = db.Column(db.Integer, primary_key=True)
+    customer_first_name = db.Column(db.String(200))
+    customer_last_name = db.Column(db.String(200))
+    customer_email = db.Column(db.String(200))
+    experience_rating = db.Column(db.Integer)
+    customer_comments = db.Column(db.String(500))
 
 # ============
 # routes
@@ -50,8 +59,6 @@ def submit():
         customer_email = request.form['customer_email']
         experience_rating = request.form['experience_rating']
         customer_comments = request.form['comments']
-
-        print(customer_first_name, customer_last_name, customer_email, experience_rating, customer_comments)
 
         # handle user missing fields
         if customer_first_name == '' or customer_last_name == '':
