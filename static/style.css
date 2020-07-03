@@ -3,12 +3,21 @@
 /* dark blue #0D3B66 */
 /* yellow #F4D35E */
 
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+* {
+    font-family: 'MuseoModerno', serif;
+}
 /* ======================== */
 /* ===== App and Global ===== */
 /* ======================== */
 
 body {
     background-color: white;
+}
+
+h1 {
+    font-family: 'MuseoModerno', serif;
 }
 
 #app {
@@ -39,6 +48,7 @@ body {
 
 .headerTitle {
     padding: 5px 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ======================== */
