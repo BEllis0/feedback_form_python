@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../static/style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
     </head>
     <body>
         <!-- [if lt IE 7]>
@@ -23,6 +25,12 @@
                 <h1 class="headerTitle">Feedback</h1>
             </div>
 
+            <!-- Error handling if fields are missing -->
+
+            {% if message %}
+                <p class="errorMessage">{{ message | safe }}</p>
+            {% endif %}
+
             <!-- Form -->
             <form
                 id="feedbackForm"
@@ -36,6 +44,7 @@
                         name="customer_first_name"
                         placeholder="First Name"
                         class="formUserInput"
+                        required
                     >
                     <!-- last name -->
                     <input
@@ -43,11 +52,14 @@
                         name="customer_last_name"
                         placeholder="Last Name"
                         class="formUserInput"
+                            
                     >
                     <input
                         type="email"
                         placeholder="Email Address"
                         class="formUserInput"
+                        name="customer_email"
+                        
                     />
                 </div>
                 <div class="experience_rating_section">
@@ -66,8 +78,6 @@
                     <br>
                     <textarea
                         name="comments"
-                        cols="30"
-                        rows="10"
                         placeholder="Comments"
                         id="comment_box"
                     ></textarea>

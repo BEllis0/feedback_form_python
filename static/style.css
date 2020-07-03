@@ -3,12 +3,21 @@
 /* dark blue #0D3B66 */
 /* yellow #F4D35E */
 
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+* {
+    font-family: 'MuseoModerno', serif;
+}
 /* ======================== */
 /* ===== App and Global ===== */
 /* ======================== */
 
 body {
     background-color: white;
+}
+
+h1 {
+    font-family: 'MuseoModerno', serif;
 }
 
 #app {
@@ -39,6 +48,7 @@ body {
 
 .headerTitle {
     padding: 5px 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* ======================== */
@@ -68,21 +78,29 @@ body {
 
 #experience_rating {
     width: 50%;
+    background-color: red;
 }
+
+
 
 .comments_section {
     padding: 20px 0px;
+    width: 100%;
 }
 
 #comment_box {
     background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    min-height: 150px;
 }
 
 .formSubmit {
     padding: 5px;
     width: 150px;
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: #0D3B66;
+    border: 1px solid white;
+    color: white;
     border-radius: 12px;
     margin: 10px 0px;
 }
