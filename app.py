@@ -38,8 +38,16 @@ class Feedback(db.Model):
     customer_last_name = db.Column(db.String(200))
     customer_email = db.Column(db.String(200))
     experience_rating = db.Column(db.Integer)
-    customer_comments = db.Column(db.String(500))
+    customer_comments = db.Column(db.Text())
 
+    def __init__(self, customerFirst, customerLast, email, rating, comments):
+        self.customerFirst = customerFirst
+        self.customerLast = customerLast
+        self.customerEmail = email
+        self.rating = rating
+        self.comments = comment
+
+# db.create_all()
 # ============
 # routes
 # ============
@@ -73,4 +81,3 @@ def submit():
 # ============
 if __name__ == '__main__':
     app.run()
-
