@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "/Users/brandonellis/.local/share/virtualenvs/feedback_form_python-H9zP1Oxx/bin/python"
+    "python.pythonPath": "/Users/brandonellis/.local/share/virtualenvs/feedback_form_python-H9zP1Oxx/bin/python",
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint-flask"
+    ]
 }
